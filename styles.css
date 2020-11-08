@@ -9,6 +9,22 @@ body {
   background-color: #060ab2;
 }
 
-img {
-  width: 100px;
+.memory-game {
+  height: 640px;
+  width: 640px;
+  display: flex;
+  border: 2px solid lime;
 }
+
+.memory-card {
+  border: 2px solid aqua;
+}
+
+.front-face,
+.back-face {
+  border: 2px solid deeppink;
+}
+
+/* img {
+  width: 100px;
+} */
