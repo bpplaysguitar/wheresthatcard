@@ -7,22 +7,51 @@
 body {
   height: 100vh;
   background-color: #060ab2;
+  display: flex;
 }
 
 .memory-game {
   height: 640px;
   width: 640px;
   display: flex;
-  border: 2px solid lime;
+  flex-wrap: wrap;
+  margin: auto;
+  /* body display flex + margin auto here centers the game */
+  perspective: 1000px;
 }
 
 .memory-card {
-  border: 2px solid aqua;
+  width: calc(25% - 10px);
+  height: calc(33.33% - 10px);
+  position: relative;
+  margin: 5px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
 }
 
 .front-face,
 .back-face {
-  border: 2px solid deeppink;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background: #39b578;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
 }
 
 /* img {
