@@ -44,9 +44,10 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 30px;
   background: #39b578;
+  background: white;
   backface-visibility: hidden;
 }
 
