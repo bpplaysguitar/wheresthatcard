@@ -44,6 +44,7 @@ function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     scoreUp();
+    console.log("Match: " + firstCard.dataset.framework);
     resetBoard();
 }
 
