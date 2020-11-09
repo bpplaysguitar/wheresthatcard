@@ -7,7 +7,8 @@
 body {
   height: 100vh;
   background-color: #060ab2;
-  display: flex;
+  display: block;
+  position: relative;
 }
 
 .memory-game {
@@ -16,7 +17,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  /* body display flex + margin auto here centers the game */
+  /* body display flex or block + margin auto here centers the game */
   perspective: 1000px;
   border: 3px solid white;
   flex-direction: column;
@@ -32,6 +33,21 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.5s;
   cursor: pointer;
+}
+.score {
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  width: 425px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* body display flex + margin auto here centers the game */
+  perspective: 1000px;
+  border: 3px solid white;
+  flex-direction: column;
 }
 
 .memory-card:active {
@@ -59,7 +75,7 @@ body {
   transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .memory-game {
     height: 1068px;
     width: 768px;
@@ -69,4 +85,4 @@ body {
     width: calc(25% - 10px);
     height: calc(15% - 10px);
   }
-}
+} */
