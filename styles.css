@@ -18,7 +18,7 @@ body {
   margin: auto;
   /* body display flex + margin auto here centers the game */
   perspective: 1000px;
-  border: 3px solid pink;
+  border: 3px solid white;
   flex-direction: column;
 }
 
@@ -59,13 +59,14 @@ body {
   transform: rotateY(180deg);
 }
 
-/* img {
-  width: 100px;
-} */
-
-@media screen (max-width:600px) {
-.memory-card {
-  width: calc(14% - 10px);
-  height: calc(25% - 10px);
-
-} 
+@media only screen and (max-width: 600px) {
+  .memory-game {
+    height: 1068px;
+    width: 768px;
+    background-color: red;
+  }
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(15% - 10px);
+  }
+}
