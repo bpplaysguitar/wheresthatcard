@@ -38,13 +38,13 @@ body {
 }
 
 header {
-  height: 30px;
+  height: 82px;
   width: 402px;
   border: 3px solid white;
   color: white;
   justify-content: center;
   margin: 10px auto 10px auto;
-  display: flex;
+  display: block;
 }
 
 h3 {
@@ -58,18 +58,34 @@ h3 {
 
 #score {
   color: lightskyblue;
+  display: flex;
 }
 
 .score-imgs {
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  width: 270px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  transform: translateY(-31px);
 }
 
 .score-img img {
-  height: 30px;
+  height: 33px;
   margin: 1px;
-  border: 1px solid royalblue;
+  margin-right: 4px;
   border-radius: 20%;
+  box-shadow: 1px 1px 2px 1px black;
+}
+
+.score-img:nth-child(9),
+.score-img:nth-child(10),
+.score-img:nth-child(11),
+.score-img:nth-child(12),
+.score-img:nth-child(13),
+.score-img:nth-child(14),
+.score-img:nth-child(15) {
+  transform: translate(15px, -2px);
 }
 
 .memory-card:active {
