@@ -45,7 +45,7 @@ body {
   color: white;
   font-size: 2em;
   text-align: center;
-  transform: translate(-138px, -592px);
+  transform: translate(-135px, -592px);
   font-family: "Fredoka One";
   position: relative;
   text-shadow: 4px 4px 4px tomato;
@@ -53,10 +53,6 @@ body {
   z-index: 1;
   visibility: hidden;
 }
-
-/* .itsamatch.hidden {
-  display: none;
-} */
 
 header {
   height: 130px;
