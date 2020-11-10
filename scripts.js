@@ -5,6 +5,7 @@ let lockBoard = false;
 const scoreDisplay = document.querySelector('#score')
 let score = 0;
 
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
