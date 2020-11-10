@@ -45,13 +45,18 @@ body {
   color: white;
   font-size: 2em;
   text-align: center;
-  transform: translate(-140px, -592px);
+  transform: translate(-138px, -592px);
   font-family: "Fredoka One";
   position: relative;
   text-shadow: 4px 4px 4px tomato;
   text-transform: uppercase;
   z-index: 1;
+  visibility: hidden;
 }
+
+/* .itsamatch.hidden {
+  display: none;
+} */
 
 header {
   height: 130px;
@@ -77,7 +82,7 @@ h3 {
   /* text-align: center; */
   height: 30px;
   width: 402px;
-  margin-left: 2px;
+  margin-left: 4px;
   margin-top: 6px;
   /* body display flex + margin auto here centers the game */
   font-family: "Fredoka One";

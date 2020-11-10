@@ -46,9 +46,20 @@ function disableCards() {
     secondCard.removeEventListener('click', flipCard);
     scoreUp();
     console.log("Match: " + firstCard.dataset.framework);
+    setTimeout("flashMatchOn()", 100);
+    setTimeout("flashMatchOff()", 1500);
     scoreImgFound();
     resetBoard();
 }
+
+
+function flashMatchOn() {
+  document.getElementById("flashmatch").style.visibility ="visible"; 
+  }
+function flashMatchOff() {
+  document.getElementById("flashmatch").style.visibility ="hidden"; 
+  }
+
 
 function scoreImgFound() {
 // Get desired elements
