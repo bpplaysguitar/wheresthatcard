@@ -45,7 +45,20 @@ function disableCards() {
     secondCard.removeEventListener('click', flipCard);
     scoreUp();
     console.log("Match: " + firstCard.dataset.framework);
+    scoreImgFound();
     resetBoard();
+}
+
+function scoreImgFound() {
+// Get desired elements
+var element = document.getElementsByClassName(firstCard.dataset.framework);
+
+// Iterate through the retrieved elements and remove "notfound" class name.
+for(var i = 0; i < element.length; i++)
+{
+    element[i].classList.remove('notfound');
+    console.log(element[i].className);
+}
 }
 
 function unflipCards() {
