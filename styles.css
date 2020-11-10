@@ -57,7 +57,19 @@ h3 {
 }
 
 #score {
-  display: ;
+  color: lightskyblue;
+}
+
+.score-imgs {
+  display: flex;
+  border: 1px solid blue;
+}
+
+.score-img img {
+  height: 30px;
+  margin: 1px;
+  border: 1px solid royalblue;
+  border-radius: 20%;
 }
 
 .memory-card:active {
