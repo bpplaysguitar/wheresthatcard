@@ -115,11 +115,11 @@ h3 {
   margin: 1px;
   margin-right: 4px;
   border-radius: 20%;
-  box-shadow: 1px 1px 2px 1px black;
+  box-shadow: 1px 1px 2px 1px var(--game-background);
 }
 
 .score-img.notfound {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .score-img:nth-child(9),
