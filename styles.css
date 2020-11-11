@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+:root {
+  --body-background: #403d58;
+  --game-background: #fc7753;
+  --game-border: #66d7d1;
+  --card-border: #dbd56e;
+  --score-color: #fc7753;
+  --score-label: #66d7d1;
+  --match-flash: #dbd56e;
+  --match-shadow: #fc7753;
+}
 
 * {
   padding: 0;
@@ -8,7 +18,7 @@
 
 body {
   height: 100vh;
-  background-color: rgba(34, 83, 49, 0.664);
+  background-color: var(--body-background);
   display: block;
   position: relative;
 }
@@ -21,10 +31,10 @@ body {
   margin: auto;
   /* body display flex or block + margin auto here centers the game */
   perspective: 1000px;
-  border: 3px solid rgb(8, 132, 148);
+  border: 3px solid var(--game-border);
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(184, 159, 111);
+  background-color: var(--game-background);
 }
 
 .memory-card {
@@ -42,13 +52,13 @@ body {
 .itsamatch {
   /* width: 402px; */
   /* border: 3px solid white; */
-  color: white;
+  color: var(--match-flash);
   font-size: 2em;
   text-align: center;
   transform: translate(-135px, -592px);
   font-family: "Fredoka One";
   position: relative;
-  text-shadow: 4px 4px 4px tomato;
+  text-shadow: 4px 4px 4px var(--match-shadow);
   text-transform: uppercase;
   z-index: 1;
   visibility: hidden;
@@ -58,7 +68,8 @@ header {
   height: 130px;
   width: 402px;
   /* border: 3px solid white; */
-  color: white;
+  color: var(--score-label);
+  text-shadow: 1px 1px 1px var(--card-border);
   justify-content: center;
   margin: 2px auto -5px auto;
   display: block;
@@ -87,7 +98,7 @@ h3 {
 }
 
 #score {
-  color: lightskyblue;
+  color: var(--score-color);
 }
 
 .score-imgs {
@@ -137,8 +148,7 @@ h3 {
   width: 100%;
   padding: 2px;
   border-radius: 17px;
-  background: #39b578;
-  background: white;
+  background: var(--card-border);
   backface-visibility: hidden;
 }
 

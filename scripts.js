@@ -46,8 +46,12 @@ function disableCards() {
     secondCard.removeEventListener('click', flipCard);
     scoreUp();
     console.log("Match: " + firstCard.dataset.framework);
-    setTimeout("flashMatchOn()", 100);
-    setTimeout("flashMatchOff()", 1500);
+    setTimeout("flashMatchOn()", 50);
+    setTimeout("flashMatchOff()", 450);
+    setTimeout("flashMatchOn()", 850);
+    setTimeout("flashMatchOff()", 1250);
+    setTimeout("flashMatchOn()", 1650);
+    setTimeout("flashMatchOff()", 2050);
     scoreImgFound();
     resetBoard();
 }
