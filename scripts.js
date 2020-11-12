@@ -75,6 +75,7 @@ for(var i = 0; i < element.length; i++)
     element[i].classList.remove('notfound');
     console.log(element[i].className);
 }
+gameEnd();
 }
 
 function unflipCards() {
@@ -101,3 +102,12 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
+function gameEnd() {
+    let scoreImgs = Array.from(document.querySelectorAll('.notfound'));
+
+    console.log(scoreImgs);
+    if (scoreImgs.length < 1) {
+      console.log("done");
+      document.getElementById("complete").classList.remove("hidden");
+    }}

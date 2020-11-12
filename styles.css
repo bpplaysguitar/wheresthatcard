@@ -97,6 +97,33 @@ h3 {
   /* text-transform: uppercase; */
 }
 
+.complete {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  transform: translate(-0px, -435px);
+  font-family: "Fredoka One";
+  position: relative;
+  text-shadow: 8px 7px 3px var(--body-background);
+  /* text-transform: uppercase; */
+  z-index: 1;
+  opacity: 1;
+  animation: completeopacity 0.75s ease-in;
+}
+
+@keyframes completeopacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.complete.hidden {
+  /* display: none; */
+}
+
 #score {
   color: var(--score-color);
 }
