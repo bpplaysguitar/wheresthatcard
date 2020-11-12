@@ -94,14 +94,13 @@ h3 {
   /* body display flex + margin auto here centers the game */
   font-family: "Fredoka One";
   font-size: 1.5em;
-  /* text-transform: uppercase; */
 }
 
 .complete {
   color: var(--game-border);
   font-size: 4.25em;
   text-align: center;
-  transform: translate(-0px, -443px);
+  transform: translate(-0px, -445px);
   font-family: "Fredoka One";
   position: relative;
   text-shadow: 8px 7px 3px var(--body-background);
@@ -127,6 +126,7 @@ h3 {
 
 #score {
   color: var(--score-color);
+
 }
 
 #score2 {
