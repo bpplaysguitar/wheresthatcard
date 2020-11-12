@@ -121,7 +121,7 @@ h3 {
 }
 
 .complete.hidden {
-  /* display: none; */
+  display: none;
 }
 
 #score {
