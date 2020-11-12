@@ -4,6 +4,8 @@ let firstCard, secondCard;
 let lockBoard = false;
 const scoreDisplay = document.querySelector('#score')
 let score = 0;
+const scoreDisplay2 = document.querySelector('#score2')
+let score2 = 0;
 
 
 function flipCard() {
@@ -28,11 +30,15 @@ function flipCard() {
 function scoreUp() {
   score +=10;
   scoreDisplay.innerHTML = score;
+  score2 +=10;
+  scoreDisplay2.innerHTML = score2;
 }
 
 function scoreDown() {
 score -=1;
   scoreDisplay.innerHTML = score;
+  score2 -=1;
+  scoreDisplay2.innerHTML = score2;
 }
 
 function checkForMatch() {

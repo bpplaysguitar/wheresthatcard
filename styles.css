@@ -98,14 +98,15 @@ h3 {
 }
 
 .complete {
-  color: white;
-  font-size: 4em;
+  color: var(--game-border);
+  font-size: 4.25em;
   text-align: center;
-  transform: translate(-0px, -435px);
+  transform: translate(-0px, -443px);
   font-family: "Fredoka One";
   position: relative;
   text-shadow: 8px 7px 3px var(--body-background);
-  /* text-transform: uppercase; */
+  -webkit-text-stroke: 2px var(--body-background);
+  web
   z-index: 1;
   opacity: 1;
   animation: completeopacity 0.75s ease-in;
@@ -125,6 +126,10 @@ h3 {
 }
 
 #score {
+  color: var(--score-color);
+}
+
+#score2 {
   color: var(--score-color);
 }
 
